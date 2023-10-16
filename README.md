@@ -50,7 +50,7 @@ This tutorial outlines the post-install configuration of the open-source help de
     <li>In this example, the user "josh" is on the Agent Panel</li>
     <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/6abb22de-3ec5-47a9-8efd-46caf9d1622f" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
   </ul>
-  <li><b>Roles</b></li>
+  <li><b>Roles</b> grant certain permisions to Agents in an Department they are assigned to</li>
   <ul>
     <li>In the <b>Admin Panel</b>, go to the <b>Agents</b> tab and click on <b>Roles</b>, then click on <b>Add New Role</b></li>
     <ul>
@@ -63,7 +63,7 @@ This tutorial outlines the post-install configuration of the open-source help de
     </ul>
   </ul>
 
-  <li><b>Departments</b></li>
+  <li><b>Departments</b> are needed to route and resolve tickets based on their importance or instructions</li>
   <ul>
   <li>Still on the Agents tab, click on <b>Departments</b> and click on <b>Add New Department</b></li>
   <ul>
@@ -74,6 +74,19 @@ This tutorial outlines the post-install configuration of the open-source help de
   <ul>
     <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/700f78be-2640-4f34-85d6-0ab8ff6ae994" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
   </ul>
+  </ul>
+
+  <li><b>Teams</b> allow us to organize Agents from different Departments in osTicket to handle specific issues and supersede Agents and their Departments' parameter rules</li>
+  <ul>
+    <li>In the Agents tab, click on <b>Teams</b> and click on <b>Add New Team</b></li>
+    <ul>
+    <li><b>Note</b>: Just like previous set ups, osTicket creates a Team (Level I Support) by default</li>
+    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/5ede2f9c-91d5-4f9b-8199-99e8f0696e5c" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+    </ul>
+    <li>Name the Team <b>Level II Support</b> then click on <b>Create Team</b> to create the Team</li>
+    <ul>
+      <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/b9aa5ab2-2c41-4666-a4f2-6a0f3ff88bc1" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+    </ul>
   </ul>
   
 </ul>
