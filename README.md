@@ -30,7 +30,7 @@ This tutorial outlines the post-install configuration of the open-source help de
   <li>Creating and Configuring Roles</li>
   <li>Creation of Tickets</li>
   <li>Creating Agents and Users</li>
-  <li>Setting up Service Level Agreements (SLA) in ticketing system</li>
+  <li>Setting up Service Level Agreements (SLA Plans) in ticketing system</li>
   <li>Configuring Help Topics</li>
 </ol>
 
@@ -139,9 +139,13 @@ This tutorial outlines the post-install configuration of the open-source help de
   <li><b>Users</b> (or Customers) are creators and owners of tickets and by using osTicket they are able to track the status of their tickets</li>
   
   <ul>
-    <li>In the <b>Agent Panel</b></li>
+    <li>In the <b>Agent Panel</b>, go to the <b>Users</b> tab and click on <b>Add User</b></li>
     <ul>
-      <li><img src="(https://github.com/ColtonTrauCC/post-install-config/assets/147654000/f08ec067-3a66-420e-bfaf-6a3003512bcb" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+      <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/f08ec067-3a66-420e-bfaf-6a3003512bcb" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+    </ul>
+    <li>For this tutorial, we will be creating two new Users <b>Ken</b> and <b>Karen</b> and setting up usernames, emails, and passwords similar to our Agents.</li>
+    <ul>
+      <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/8eadff14-b483-4781-9679-80b252a092c4" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
     </ul>
   </ul>
   
@@ -151,13 +155,27 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 </br>
 
-<h3>Adding SLAs</h3>
+<h3>Adding SLA Plans</h3>
 
 <p>
   
 <ul>
-  <li></li>
-  <li></li>
+  <li><b>Service Level Agreements</b> or SLA Plans provide a length of time for the ticket Administrator when the ticket is expected be CLOSED. They can also be designated to specific Departments or Help Topics</li>
+  <li>In the <b>Admin Panel</b>, go to the <b>Manage</b> tab and drop down to <b>SLA</b> then click on <b>Add New SLA Plan</b></li>
+  <ul>
+    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/1ebc6fe9-aa95-4e52-9fd9-1ecd7724d3b9" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/cf8da66d-209b-40e6-a4f1-c99bbd102b3a" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+  </ul>
+  <li>osTicket by default has the SLA Plan <b>Default SLA</b>. We will be creating three SLA Plans each with their own length of time for different kinds of importance of the ticket, from highest priority to lowest priority:</li>
+  <ol>
+    <li>SEV-A with <b>1 hour Grace Period, 24/7 Schedule</b>, suitable for tickets that are business critical</li>
+    <li>SEV-B with <b>4 hour Grace Period, 24/7 Schedule</b>, suitable for tickets affecting employees such as troubleshooting or PC problems</li>
+    <li>SEV-C with <b>8 hour Grace Period, business hours Schedule</b>, suitable for tickets requesting new equipment</li>
+  </ol>
+  <li>Example of creating SEV-A SLA Plan, click on <b>Add Plan</b> to create the SLA Plan</li>
+  <ul>
+    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/ee7d6fbb-f67a-4055-aa9b-b9fd77d48de1" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+  </ul>
 </ul>
   
 </p>
@@ -169,8 +187,24 @@ This tutorial outlines the post-install configuration of the open-source help de
 <p>
   
 <ul>
-  <li></li>
-  <li></li>
+  <li><b>Help Topics</b> are helpful to streamline the ticket entry experience for the user by helping them specify their ticket info and also determine what Department the ticket should go to</li>
+  <li>In the <b>Admin Panel</b>, go to the <b>Manage</b> tab and click on <b>Add New Help Topic</b></li>
+  <ul>
+    <li><b>Note</b>: osTicket creates four Help Topics (Feedback, General Inquiry, Report a Problem, and Report a Problem / Access Issue) by default</li>
+    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/27299450-a705-462c-a7d0-6fcdac6f5a59" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+  </ul>
+  <li>We will create four different Help Topics based on the potential serverity a ticket could have, from highest to lowest priority:</li>
+  <ol>
+    <li>Business Critical Outage</li>
+    <li>Personal Computer Issues </li>
+    <li>Equipment Request</li>
+    <li>Password Reset</li>
+  </ol>
+  <li>Example of entering credentials for the Help Topic "Equipment Request," click on <b>Add Topic</b> to create the Help Topic</li>
+  <ul>
+    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/97777c9e-516c-4831-891b-9d65e9613ed0" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+  </ul>
+  
 </ul>
   
 </p>
