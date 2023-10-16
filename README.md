@@ -50,14 +50,32 @@ This tutorial outlines the post-install configuration of the open-source help de
     <li>In this example, the user "josh" is on the Agent Panel</li>
     <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/6abb22de-3ec5-47a9-8efd-46caf9d1622f" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
   </ul>
-  <li>In the <b>Admin Panel</b>, go to the <b>Agents</b> tab and click on <b>Roles</b>, then click on <b>Add new Role</b></li>
+  <li><b>Roles</b></li>
   <ul>
-    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/6347ce31-f5f1-4078-b738-dc70dd037df6" alt="Disk Sanitization Steps"/></li>
+    <li>In the <b>Admin Panel</b>, go to the <b>Agents</b> tab and click on <b>Roles</b>, then click on <b>Add New Role</b></li>
+    <ul>
+      <li><b>Note</b>: osTickets creates four Roles (All Access, Expanded Access, Limited Access, and View Only) by default.</li>
+      <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/6347ce31-f5f1-4078-b738-dc70dd037df6" alt="Disk Sanitization Steps"/></li>
+    </ul>
+    <li>Name the new Role <b>Supreme Admin</b>, and click on the <b>Permissions</b> tab; in this tab you can assign specific permissions to this role. For our "Supreme Admin" Role, we will check every box under the <b>Tickets</b>, <b>Tasks</b>, and <b>Knowledgebase</b> tabs. Click on <b>Add Role</b> to finish and create the role.</li>
+    <ul>
+      <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/306c368f-76fb-4b25-869b-d1a1f430ed76" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+    </ul>
   </ul>
-  <li>Name the new Role <b>Supreme Admin</b>, and click on the <b>Permissions</b> tab; in this tab you can assign specific permissions to this role. For our "Supreme Admin" Role, we will check every box under the <b>Tickets</b>, <b>Tasks</b>, and <b>Knowledgebase</b> tabs.</li>
+
+  <li><b>Departments</b></li>
   <ul>
-    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/306c368f-76fb-4b25-869b-d1a1f430ed76" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+  <li>Still on the Agents tab, click on <b>Departments</b> and click on <b>Add New Department</b></li>
+  <ul>
+    <li><b>Note</b>: Much like Roles, osTicket also creates two Departments (Maintenance and Support) by default</li>
+    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/2a449d47-9632-47ee-9606-65512e292a2e" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
   </ul>
+  <li>Name the Department <b>System Administrators</b> (we'll leave everything else by default for now), then click on <b>Create Dept</b> to create Department</li>
+  <ul>
+    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/700f78be-2640-4f34-85d6-0ab8ff6ae994" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+  </ul>
+  </ul>
+  
 </ul>
   
 </p>
@@ -115,4 +133,9 @@ This tutorial outlines the post-install configuration of the open-source help de
 </p>
 
 </br>
+
+<h3>Further Reading and Manual</h3>
+<ul>
+  <li>This concludes to basics of osTicket configuration, but further information and research on the features of osTicket can be found in the official online doccumentation <a href= "https://docs.osticket.com/en/latest/index.html">here</a></li>
+</ul>
 
