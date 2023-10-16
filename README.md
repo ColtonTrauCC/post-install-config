@@ -95,13 +95,15 @@ This tutorial outlines the post-install configuration of the open-source help de
 
 </br>
 
-<h3>Allowing creation of Tickets</h3>
+<h3>Allowing anyone to create Tickets</h3>
 
 <p>
   
 <ul>
-  <li></li>
-  <li></li>
+  <li>In the <b>Admin Panel</b>, head to the <b>Settings</b> tab and click on <b>Users</b>, make sure <b>Registration Required</b> is unchecked. This will allow us to create tickets anonymously</li>
+  <ul>
+    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/97c51388-324a-42e0-a808-067de164c4b6" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+  </ul>
 </ul>
   
 </p>
@@ -113,8 +115,36 @@ This tutorial outlines the post-install configuration of the open-source help de
 <p>
   
 <ul>
-  <li></li>
-  <li></li>
+  <li><b>Agents</b> (or Workers) are given the access to the help desk in osTicket to respond, resolve, and update the status of tickets</li>
+  
+  <ul>
+    <li>In the <b>Admin Panel</b>, head to the <b>Agents</b> tab and click on <b>Add New Agent</b></li>
+    <ul>
+      <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/d66757f0-54d1-458f-8a2d-4f1890b2da1d" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+    </ul>
+    <li>For this tutorial, we will be creating two new Agents <b>Jane</b> and <b>John</b>, it is advise to have a notepad ready to catalog login information as you enter their credentials, but we will set their user names as <b>[name].doe</b> and both of their passwords as <b>Password1</b> for convenience (which is our admin password from the installation tutorial)</li>
+    <ul>
+      <li>Fill in the Agent's basic info and set the Agent's email address as <b>[name].doe@osticket.com</b> and click on <b>Set Password</b></li>
+      <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/06fbd1ca-9d97-4f4f-b866-9b304dbdeb57" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+      <li>Set the Agent's password to <b>Password1</b> and unchecked the boxes to prevent the Agent for our example from needing to reset password or change password after login</li>
+      <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/51953148-bddc-476c-9368-4b62f4bf3d42" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+    </ul>
+    <li>Go the <b>Access</b> tab to set the Agent's <b>Primary Department</b> (Mandatory to create the Agent). <b>Extended Access</b> can also be added to the Agent in order to access additional Departments</li>
+    <ul>
+    <li><img src="https://github.com/ColtonTrauCC/post-install-config/assets/147654000/c57bca22-2622-4f01-88eb-bd699d1f12de" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+    </ul>
+    <li>OPTIONAL: Head to the <b>Teams</b> tab to assign the Agent to a Team</li>
+  </ul>
+  
+  <li><b>Users</b> (or Customers) are creators and owners of tickets and by using osTicket they are able to track the status of their tickets</li>
+  
+  <ul>
+    <li>In the <b>Agent Panel</b></li>
+    <ul>
+      <li><img src="(https://github.com/ColtonTrauCC/post-install-config/assets/147654000/f08ec067-3a66-420e-bfaf-6a3003512bcb" height="80%" width="80%" alt="Disk Sanitization Steps"/></li>
+    </ul>
+  </ul>
+  
 </ul>
   
 </p>
